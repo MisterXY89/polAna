@@ -7,11 +7,13 @@ I've created a folder for each API/tool, containing my code and approach. Feel f
 
 ## Useful resources
 ### Python libs
-All libs stated here are for parsing and extracting data from webpages.
+For parsing and extracting data from webpages:
  - [scrapy](https://scrapy.org/)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [Giveme5W1H](https://github.com/fhamborg/Giveme5W1H)
 - [newspaper](https://github.com/codelucas/newspaper)
+Visualization:
+[mathplotlib](https://matplotlib.org/)
 
 ### JavaScript/Node
 - [D3](https://d3js.org/), for visualization 
