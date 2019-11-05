@@ -15,6 +15,7 @@ For parsing and extracting data from webpages:
 
 Visualization:
 - [mathplotlib](https://matplotlib.org/)
+- [seaborn](https://seaborn.pydata.org/)
 
 Handling data:
 - [numpy](https://numpy.org/)
