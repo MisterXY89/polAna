@@ -12,8 +12,12 @@ For parsing and extracting data from webpages:
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [Giveme5W1H](https://github.com/fhamborg/Giveme5W1H)
 - [newspaper](https://github.com/codelucas/newspaper)
+
 Visualization:
-[mathplotlib](https://matplotlib.org/)
+- [mathplotlib](https://matplotlib.org/)
+
+Handling data:
+- [numpy](https://numpy.org/)
 
 ### JavaScript/Node
 - [D3](https://d3js.org/), for visualization 
