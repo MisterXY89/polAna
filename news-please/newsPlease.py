@@ -13,14 +13,16 @@ urls = [
 	]
 
 
+articles = NewsPlease.from_urls(urls)
+
 titles = []
-for url in urls:
-	article = NewsPlease.from_url(url)
-	titles.append(article.title)
+for article in articles.items():
+	ar = article[1]
+	titles.append(ar.title)
 
 
 # lexicon needed for sentiment analysis, needs to be downloaded once
-nltk.download('vader_lexicon')
+# nltk.download('vader_lexicon')
 
 # https://opensourceforu.com/2016/12/analysing-sentiments-nltk/
 sid = SentimentIntensityAnalyzer()
@@ -43,8 +45,10 @@ urls2 = [
 	"https://www.zeit.de/kultur/2019-11/meinungsfreiheit-rechtsextremismus-afd-medien-verantwortung"
 	]
 
-for url in urls2:
-	article = NewsPlease.from_url(url)
-	print(article.title)
-	print(article.authors)
-	print(article.language)
+
+articles2 = NewsPlease.from_urls(urls2)
+for article in articles2.items():
+	ar = article[1]
+	print(ar.title)
+	print(ar.authors)
+	print(ar.language)
