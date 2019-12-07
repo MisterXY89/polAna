@@ -10,3 +10,7 @@ res2 = mc.storyCount('zimbabwe AND president AND tags_id_media:58722749', 'publi
 
 print(res1['count']) # prints the number of stories found
 print(res2['count']) # prints the number of stories found
+
+
+
+		
