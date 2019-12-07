@@ -32,10 +32,13 @@ class ApiSetup:
 		with urllib.request.urlopen(reqUrl) as url:
 			data = self.json_to_obj(url.read().decode())
 			self._log(f"Request status: {data.status}")
-			self._log(f"Fetched {data.num_results} results from the NYT")
-			# might not be set (for period calls)
-			# self._log(f"The last data update was: {data.last_updated}")			
-			return data.results
+			if data.status == "OK":
+				self._log(f"Fetched {data.num_results} results from the NYT")
+				# might not be set (for period calls)
+				# self._log(f"The last data update was: {data.last_updated}")			
+				return data.results
+			else:
+				return False
 
 
 	# https://stackoverflow.com/a/15882054
