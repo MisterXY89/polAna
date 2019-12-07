@@ -15,6 +15,10 @@ urls = [
 
 articles = NewsPlease.from_urls(urls)
 
+print("Methoden & Attribute")
+firstArticle = list(articles.values())[0]
+print(f"{dir(firstArticle)}\n")
+
 titles = []
 for article in articles.items():
 	ar = article[1]
