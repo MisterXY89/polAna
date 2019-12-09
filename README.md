@@ -4,6 +4,7 @@ Collection of materials for my presentation for the seminar: *studying digital m
 
 ## Folder structure
 I've created a folder for each API/tool, containing my code and approach. Feel free to use everything you may need. If you have any questions just to ask me or open an issue.
+**All API keys have been reset, so you have to create your own.**
 
 ## Useful resources
 ### Python libs
