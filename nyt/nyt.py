@@ -2,13 +2,11 @@
 from setup import *
 
 api = ApiSetup()
-app = AppSetup()
 
 # for this small example this class is not necessarily needed
 class NYT():
-	def __init__(self,api,app):
+	def __init__(self,api):
 		self.api = api
-		self.app = app
 
 	def getTopTitles(self):
 		for entry in self.api.read(self.api.top_url):
@@ -24,7 +22,7 @@ class NYT():
 
 
 
-nyt = NYT(api, app)
+nyt = NYT(api)
 nyt.getTopTitles()
 nyt.getTopShared(period=30)
 
