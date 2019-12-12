@@ -46,12 +46,3 @@ class ApiSetup:
 		return namedtuple('X', d.keys(),rename=True)(*d.values())
 	def json_to_obj(self, data): 
 		return json.loads(data, object_hook=self._json_object_hook)
-
-
-class AppSetup():
-	def __init__(self):
-		self.id = "0e66fc01-eb6f-4e0a-9480-647372abc5d5"
-		self.name = "AnalysePolitischerEffekteDigitalerMedien"
-		self.author = "Tilman Kerl"
-		self.description = "App for the seminar: Analyse Politischer Effekte Digitaler Medien"
-		self.profile_mail = "tilman.kerl@uni-konstanz.de"
